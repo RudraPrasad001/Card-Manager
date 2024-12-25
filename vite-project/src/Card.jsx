@@ -6,6 +6,7 @@ function Card(){
     }
     return(
         <>
+        <div className = "cardContainer">
         <div className="Card">
             <img className="cardImage" src = {oldImg}></img>
             <h2 className="cardHeader"> BL4Z3NINJA {new Date().getFullYear()}</h2>
@@ -20,7 +21,7 @@ function Card(){
             <img className="cardImage" src = {oldImg}></img>
             <h2 className="cardHeader"> BL4Z3NINJA {new Date().getFullYear()-2}</h2>
             <p className="cardDescription">I am a Full Stack Enthusiast</p>
-        </div>
+        </div></div>
         <div className = "imageChangerContainer">
             <button id="imageChanger" onClick={changeImage}>ChangeImage</button>
     </div>

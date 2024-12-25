@@ -2,16 +2,22 @@
   border: 2px solid black;
   width: 320px;
   padding: 50px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   border-radius: 20px;
   background-color: #FDF4DC;
-  margin: 10px;
   text-align: center;
   box-shadow: 1px 2px 2px black;
+  margin-bottom: 50px;
 }
+.cardContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap:50px
+}
+
 .Card .cardImage{
-  max-width: 60%;
-  height: 200px;
   border-radius: 150px;
   margin-bottom: 15px;
   filter:drop-shadow(4px 4px 2px black);
@@ -50,9 +56,13 @@
     background-color: black;
     margin: 0px;
   }
+  .Card .cardImage{
+    width: 100px;
+    align-self: center;
+  }
   .Card{
-    width: 100%;
-    overflow: hidden;
+    margin-bottom: 5px;
+    padding: 5px;
   }
   .Card .cardDescription{
     font-size: small;
@@ -60,10 +70,10 @@
   .Card .cardHeader{
     font-size: medium;
   }
-  .Card .cardImage{
-    height: 100px;
-  }
-  #root{
-    margin: 0px;
+  .cardContainer{
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
   }
 }
